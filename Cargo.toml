@@ -29,5 +29,6 @@ opt-level = 3
 #     <crate> = { path = "/path/to/local/checkout" }
 expat-sys = { git = "https://github.com/ferjm/libexpat", branch = "pkgconfig.android" }
 servo-fontconfig-sys = { git = "https://github.com/ferjm/libfontconfig", branch = "pkgconfig.android" }
+servo-freetype-sys = { git = "https://github.com/ferjm/libfreetype2", branch = "pkgconfig.android" }
 [patch."https://github.com/servo/media"]
 servo-media = { git = "https://github.com/ferjm/media", branch = "enable.gst.android" }

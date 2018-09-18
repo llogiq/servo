@@ -115,7 +115,7 @@ dependencies = [
  "cmake 0.1.29 (registry+https://github.com/rust-lang/crates.io-index)",
  "euclid 0.19.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "libc 0.2.42 (registry+https://github.com/rust-lang/crates.io-index)",
- "servo-freetype-sys 4.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "servo-freetype-sys 4.0.3 (git+https://github.com/ferjm/libfreetype2?branch=pkgconfig.android)",
  "servo-skia 0.30000019.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -1081,7 +1081,7 @@ version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "libc 0.2.42 (registry+https://github.com/rust-lang/crates.io-index)",
- "servo-freetype-sys 4.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "servo-freetype-sys 4.0.3 (git+https://github.com/ferjm/libfreetype2?branch=pkgconfig.android)",
 ]
 
 [[package]]
@@ -3264,13 +3264,13 @@ source = "git+https://github.com/ferjm/libfontconfig?branch=pkgconfig.android#53
 dependencies = [
  "expat-sys 2.1.5 (git+https://github.com/ferjm/libexpat?branch=pkgconfig.android)",
  "pkg-config 0.3.14 (registry+https://github.com/rust-lang/crates.io-index)",
- "servo-freetype-sys 4.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "servo-freetype-sys 4.0.3 (git+https://github.com/ferjm/libfreetype2?branch=pkgconfig.android)",
 ]
 
 [[package]]
 name = "servo-freetype-sys"
 version = "4.0.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
+source = "git+https://github.com/ferjm/libfreetype2?branch=pkgconfig.android#55dc913b4e6fb8969b39deaf3f667426ec3f047a"
 dependencies = [
  "cmake 0.1.29 (registry+https://github.com/rust-lang/crates.io-index)",
  "pkg-config 0.3.14 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -3279,7 +3279,7 @@ dependencies = [
 [[package]]
 name = "servo-media"
 version = "0.1.0"
-source = "git+https://github.com/ferjm/media?branch=enable.gst.android#9de33aa26f99b25b1b5c1d41bbce295743834400"
+source = "git+https://github.com/ferjm/media?branch=enable.gst.android#7ab76d58416aa06f6a08e9e1839cecf5a2654301"
 dependencies = [
  "servo-media-audio 0.1.0 (git+https://github.com/ferjm/media?branch=enable.gst.android)",
  "servo-media-gstreamer 0.1.0 (git+https://github.com/ferjm/media?branch=enable.gst.android)",
@@ -3289,7 +3289,7 @@ dependencies = [
 [[package]]
 name = "servo-media-audio"
 version = "0.1.0"
-source = "git+https://github.com/ferjm/media?branch=enable.gst.android#9de33aa26f99b25b1b5c1d41bbce295743834400"
+source = "git+https://github.com/ferjm/media?branch=enable.gst.android#7ab76d58416aa06f6a08e9e1839cecf5a2654301"
 dependencies = [
  "boxfnonce 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "byte-slice-cast 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -3305,7 +3305,7 @@ dependencies = [
 [[package]]
 name = "servo-media-gstreamer"
 version = "0.1.0"
-source = "git+https://github.com/ferjm/media?branch=enable.gst.android#9de33aa26f99b25b1b5c1d41bbce295743834400"
+source = "git+https://github.com/ferjm/media?branch=enable.gst.android#7ab76d58416aa06f6a08e9e1839cecf5a2654301"
 dependencies = [
  "byte-slice-cast 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "glib 0.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -3323,7 +3323,7 @@ dependencies = [
 [[package]]
 name = "servo-media-player"
 version = "0.1.0"
-source = "git+https://github.com/ferjm/media?branch=enable.gst.android#9de33aa26f99b25b1b5c1d41bbce295743834400"
+source = "git+https://github.com/ferjm/media?branch=enable.gst.android#7ab76d58416aa06f6a08e9e1839cecf5a2654301"
 dependencies = [
  "ipc-channel 0.11.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.66 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -3346,7 +3346,7 @@ dependencies = [
  "libc 0.2.42 (registry+https://github.com/rust-lang/crates.io-index)",
  "servo-egl 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "servo-fontconfig-sys 4.0.6 (git+https://github.com/ferjm/libfontconfig?branch=pkgconfig.android)",
- "servo-freetype-sys 4.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "servo-freetype-sys 4.0.3 (git+https://github.com/ferjm/libfreetype2?branch=pkgconfig.android)",
  "x11 2.17.3 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -3418,7 +3418,7 @@ dependencies = [
 [[package]]
 name = "servo_media_derive"
 version = "0.1.0"
-source = "git+https://github.com/ferjm/media?branch=enable.gst.android#9de33aa26f99b25b1b5c1d41bbce295743834400"
+source = "git+https://github.com/ferjm/media?branch=enable.gst.android#7ab76d58416aa06f6a08e9e1839cecf5a2654301"
 dependencies = [
  "quote 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "syn 0.13.1 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -4600,7 +4600,7 @@ dependencies = [
 "checksum servo-egl 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)" = "21069a884c33fe6ee596975e1f3849ed88c4ec857fbaf11d33672d8ebe051217"
 "checksum servo-fontconfig 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)" = "93f799b649b4a2bf362398910eca35240704c7e765e780349b2bb1070d892262"
 "checksum servo-fontconfig-sys 4.0.6 (git+https://github.com/ferjm/libfontconfig?branch=pkgconfig.android)" = "<none>"
-"checksum servo-freetype-sys 4.0.3 (registry+https://github.com/rust-lang/crates.io-index)" = "9232032c2e85118c0282c6562c84cab12316e655491ba0a5d1905b2320060d1b"
+"checksum servo-freetype-sys 4.0.3 (git+https://github.com/ferjm/libfreetype2?branch=pkgconfig.android)" = "<none>"
 "checksum servo-media 0.1.0 (git+https://github.com/ferjm/media?branch=enable.gst.android)" = "<none>"
 "checksum servo-media-audio 0.1.0 (git+https://github.com/ferjm/media?branch=enable.gst.android)" = "<none>"
 "checksum servo-media-gstreamer 0.1.0 (git+https://github.com/ferjm/media?branch=enable.gst.android)" = "<none>"
